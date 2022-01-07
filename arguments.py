@@ -86,7 +86,7 @@ def arg_parse():
 
         parser.set_defaults(
                         seed=42,
-                        dataset="/mnt/localdata/rappaz/twitch/data/v3/100k/",
+                        dataset="/content/liverec/dataset",
                         lr=0.0005,
                         l2=0.1,  
                         mask_prob=0.5,  
@@ -102,7 +102,7 @@ def arg_parse():
                         K=64,  
                         num_epochs=150,
                         model="LiveRec",
-                        model_path="/mnt/datastore/rappaz/twitch/models",
+                        model_path="/content/liverec/datastore/rappaz/twitch/models",
                         mto="liverec",
                         device="cuda",
                         cache_dir="dataset/"
