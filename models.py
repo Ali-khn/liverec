@@ -30,7 +30,7 @@ def get_model_type(args):
     elif args.model == "LiveRec":
         MODEL = LiveRec
 
-    return os.path.join(args.model_path,mto),MODEL
+    return "/content/liverec/datastore/rappaz/twitch/models",MODEL
 
 class PointWiseFeedForward(nn.Module):
     def __init__(self, hidden_units, dropout_rate):
