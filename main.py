@@ -62,7 +62,7 @@ else:
         hall = scores['all']['h01']
         if hall>best_val:
             best_val = hall
-            torch.save(model.state_dict(), MPATH)
+            torch.save(model.state_dict(), "/content/liverec/datastore/rappaz/twitch/models/saved_model.pt")
             best_cnt = best_max
         else:
             best_cnt -= 1
