@@ -70,7 +70,7 @@ else:
                 break
     
     model = MODEL(args).to(args.device)
-    model.load_state_dict(torch.load(MPATH))
+    model.load_state_dict(torch.load("/content/liverec/datastore/rappaz/twitch/models/saved_model.pt"))
     
     scores = compute_recall(model, test_loader, args)
     print("Final score")
